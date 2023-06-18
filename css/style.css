@@ -218,16 +218,20 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
 }
 
 .projects-links a {
   color: #000;
   font-weight: bold;
   font-size: 1.75rem;
-  margin-top: 6.5rem;
   display: inline-block;
   padding: 0 1.2rem;
   transition: all 0.3s;
+}
+
+.projects-links a:first-child {
+  margin-top: 5px;
 }
 
 .projects-links a:hover {
@@ -281,6 +285,7 @@ footer {
 /* end of footer styles */
 
 .top {
+  display: none;
   position: fixed;
   bottom: 50px;
   right: 20px;
@@ -291,7 +296,11 @@ footer {
   cursor: pointer;
   background-color: rgb(81, 159, 177);
   border-radius: 50%;
-  transition: transform 0.3s;
+  transition: all 0.3s;
+}
+
+.top.active {
+  display: inline-block;
 }
 
 .top:hover {
@@ -303,6 +312,13 @@ footer {
 @media (max-width: 1000px) {
   .projects .grid-container {
     display: block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+
+  .projects-links {
+    margin: 3rem 0;
   }
 
   .projects-description h3 {
