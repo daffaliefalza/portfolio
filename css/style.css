@@ -210,6 +210,10 @@ header nav ul li a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin: 6rem 0;
+  padding: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
 }
 
 .projects .img-wrapper img {
@@ -352,9 +356,13 @@ footer {
 
   .projects .grid-container {
     display: block;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    border-top: 1px solid rgb(210, 210, 210);
+    border-bottom: 1px solid rgb(210, 210, 210);
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none;
   }
 
   .projects-links {
