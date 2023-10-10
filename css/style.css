@@ -174,7 +174,7 @@ header nav ul li a:hover {
 /* skills styles */
 
 .skills {
-  margin: 12rem 0;
+  margin-block: 20rem;
   padding: 0;
 }
 
