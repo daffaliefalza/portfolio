@@ -9,6 +9,7 @@ ScrollReveal().reveal(".about__img-profile", {
   origin: "left",
   distance: "50px",
 });
+
 ScrollReveal().reveal(".about__description", {
   delay: 500,
   origin: "right",
