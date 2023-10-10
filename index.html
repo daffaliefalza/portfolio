@@ -21,6 +21,11 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <!-- animate css -->
@@ -34,8 +39,8 @@
   </head>
   <body>
     <!-- header -->
-    <div class="container">
-      <header id="top" class="animate__animated animate__fadeInDown">
+    <header id="top" class="animate__animated animate__fadeInDown">
+      <div class="container">
         <h3 class="logo">Liefalza</h3>
         <nav>
           <ul>
@@ -45,11 +50,13 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
-      <!-- header end -->
+      </div>
+    </header>
+    <!-- header end -->
 
-      <!-- hero  -->
-      <section class="hero">
+    <!-- hero  -->
+    <section class="hero">
+      <div class="container">
         <div class="hero__title">
           <h1 class="animate__animated animate__fadeInDown">
             Front-end Developer
@@ -57,7 +64,7 @@
         </div>
         <p class="hero__description animate__animated animate__fadeInDown">
           Hi, I’m Andi Daffa Liefalza. A passionate Front-<br />end Developer
-          based in bekasi. Indonesia
+          based in bekasi, Indonesia.
         </p>
         <div class="hero__social-media animate__animated animate__fadeInDown">
           <a
@@ -70,12 +77,14 @@
             <img src="./assets/images/github.png" alt="github" />
           </a>
         </div>
-      </section>
-      <!-- hero end -->
+      </div>
+    </section>
+    <!-- hero end -->
 
-      <!-- about -->
+    <!-- about -->
 
-      <section class="about" id="about">
+    <section class="about" id="about">
+      <div class="container">
         <div class="about__title">
           <h2>About me</h2>
         </div>
@@ -92,12 +101,14 @@
             </p>
           </div>
         </div>
-      </section>
-      <!-- about end -->
+      </div>
+    </section>
+    <!-- about end -->
 
-      <!-- skills -->
+    <!-- skills -->
 
-      <section class="skills">
+    <section class="skills">
+      <div class="container">
         <div class="skills__title">
           <h2>Skills</h2>
         </div>
@@ -136,15 +147,17 @@
             <span>Typescript</span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- skills end -->
+    <!-- skills end -->
 
-      <!-- projects -->
-      <section class="projects" id="projects">
-        <div class="projects__title">
-          <h2>Projects</h2>
-        </div>
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <div class="projects__title">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-wrapper container">
         <div class="projects__one grid-container">
           <div class="img-wrapper">
             <img
@@ -270,40 +283,44 @@
             />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- projects end -->
+    <!-- projects end -->
 
-      <!-- contact -->
+    <!-- contact -->
 
-      <section class="contact" id="contact">
-        <div class="contact__title">
-          <h2>Reach me</h2>
-        </div>
-        <div class="contact__wrapper">
-          <div class="gmail">
-            <img src="./assets/images/gmail.png" alt="gmail" />
-            <div class="gmail-info">
-              <h4>Gmail</h4>
-              <span>liefalzaa@gmail.com</span>
-            </div>
-          </div>
-          <div class="location">
-            <img src="./assets/images/location.png" alt="location" />
-            <div class="location-info">
-              <h4>Location</h4>
-              <span>Bekasi, Indonesia</span>
-            </div>
+    <section class="contact" id="contact">
+      <div class="contact__title">
+        <h2>Reach me</h2>
+      </div>
+      <div class="contact__wrapper">
+        <div class="gmail">
+          <img src="./assets/images/gmail.png" alt="gmail" />
+          <div class="gmail-info">
+            <h4>Gmail</h4>
+            <a
+              href="mailto:liefalzaa@gmail.com"
+              style="text-decoration: underline; color: #000"
+              >liefalzaa@gmail.com</a
+            >
           </div>
         </div>
-      </section>
+        <div class="location">
+          <img src="./assets/images/location.png" alt="location" />
+          <div class="location-info">
+            <h4>Location</h4>
+            <span>Bekasi, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- contact end -->
-    </div>
+    <!-- contact end -->
     <!-- footer -->
     <footer>
       copyright &copy; <em>andi daffa liefalza</em> <br />Made with
-      <span style="color: red">&hearts;</span> in bekasi
+      <span style="color: rgb(244, 70, 12)">&hearts; in bekasi</span>
     </footer>
     <!-- footer end -->
 
