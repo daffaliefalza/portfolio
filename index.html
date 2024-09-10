@@ -36,6 +36,44 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .animated-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #3498db;
+        border-radius: 5px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        animation: pulse 2s infinite;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        left: 45%;
+      }
+
+      .animated-button:hover {
+        background-color: #2980b9;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+          transform: scale(1.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -420,6 +458,12 @@
             />
           </div>
         </div>
+        <a
+          href="https://daffa-repo-projects.netlify.app/"
+          target="_blank"
+          class="animated-button"
+          >All Projects</a
+        >
       </div>
     </section>
 
