@@ -38,6 +38,51 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <style>
+      .hero__title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+        position: relative;
+      }
+
+      #auto-type-text {
+        background: linear-gradient(90deg, #1a3c72, #1c5d99, #1a3c72);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 3rem;
+      }
+
+      #auto-type-text::after {
+        content: "|";
+        animation: blinkCursor 0.7s infinite;
+        color: #1c5d99;
+        font-weight: bold;
+        margin-left: 2px;
+      }
+      /* Gradient animation */
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      /* Cursor blink */
+      @keyframes blinkCursor {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
       .animated-button {
         display: inline-block;
         padding: 10px 20px;
@@ -73,6 +118,31 @@
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
       }
+
+      @media (max-width: 900px) {
+        #auto-type-text {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .animated-button {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 18px;
+          color: white;
+          background-color: #3498db;
+          border-radius: 5px;
+          text-decoration: none;
+          position: relative;
+          overflow: hidden;
+          transition: background-color 0.3s ease;
+          animation: pulse 2s infinite;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          margin-bottom: 3rem;
+          left: 35%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -95,28 +165,40 @@
     <!-- hero  -->
     <section class="hero">
       <div class="container">
-        <div class="hero__title">
-          <h1 class="animate__animated animate__fadeInDown">
-            Front-end Developer
-          </h1>
-        </div>
-        <p class="hero__description animate__animated animate__fadeInDown">
-          Hi, I’m Andi Daffa Liefalza. A passionate Front-<br />end Developer
-          based in bekasi, Indonesia.
-        </p>
-        <div class="hero__social-media animate__animated animate__fadeInDown">
-          <a
-            href="https://www.linkedin.com/in/andidaffaliefalza/"
-            target="_blank"
-          >
-            <img src="./assets/images/linkedin.png" alt="linkedin" />
-          </a>
-          <a href="https://github.com/daffaliefalza" target="_blank">
-            <img src="./assets/images/github.png" alt="github" />
-          </a>
+        <div class="hero__wrapper">
+          <div class="hero__headline">
+            <div class="hero__title">
+              <h1 class="animate__animated animate__fadeInDown">
+                <span id="auto-type-text"></span>
+              </h1>
+            </div>
+            <p class="hero__description animate__animated animate__fadeInDown">
+              Hi, I’m Andi Daffa Liefalza. A passionate Front-end Developer &
+              Web Designer based in Bekasi, Indonesia. I specialize in creating
+              responsive and visually appealing websites that provide seamless
+              user experiences. Let's collaborate and build something amazing!
+            </p>
+            <div
+              class="hero__social-media animate__animated animate__fadeInDown"
+            >
+              <a
+                href="https://www.linkedin.com/in/andidaffaliefalza/"
+                target="_blank"
+              >
+                <img src="./assets/images/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/daffaliefalza" target="_blank">
+                <img src="./assets/images/github.png" alt="GitHub" />
+              </a>
+            </div>
+          </div>
+          <div class="hero__image-wrapper animate__animated animate__fadeInUp">
+            <img src="assets/images/bruh2.jpg" alt="" style="height: 450px" />
+          </div>
         </div>
       </div>
     </section>
+
     <!-- hero end -->
 
     <!-- about -->
@@ -133,10 +215,11 @@
           </div>
           <div class="about__description">
             <p>
-              I am freshgraduate information system student and a Junior Web
-              Developer certified. I like to develop a modern looking responsive
-              website. I also have the Foundation of UI-UX knowledge that will
-              provide viewing comfort and usability for the users.
+              I have a bachelor degree information system student with a 3.84
+              gpa. I've been selected and passed the test as Junior Web
+              Developer certified by kominfo. I like to develop a modern looking
+              responsive website. I also have the Foundation of UI-UX knowledge
+              that will provide viewing comfort and usability for the users.
             </p>
           </div>
         </div>
@@ -407,6 +490,20 @@
             <span>Bekasi, Indonesia</span>
           </div>
         </div>
+        <div class="whatsapp">
+          <a
+            href="https://wa.me/6281213567170?text=Hello Andi, I would like to know about you."
+            target="_blank"
+            style="
+              display: inline-block;
+              background-color: #333;
+              color: #fff;
+              padding: 0.8rem 3rem;
+              border-radius: 10px;
+            "
+            >Whatsapp</a
+          >
+        </div>
       </div>
     </section>
 
@@ -423,6 +520,43 @@
     <a href="#">
       <img src="./assets/images/top.png" class="top" alt="" />
     </a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textArray = ["Front-end Developer", "Web Designer"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 100;
+        const erasingSpeed = 50;
+        const delayBetweenWords = 800;
+
+        const autoTypeText = document.getElementById("auto-type-text");
+
+        function type() {
+          if (charIndex < textArray[textIndex].length && !isDeleting) {
+            autoTypeText.textContent += textArray[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingSpeed);
+          } else if (charIndex > 0 && isDeleting) {
+            autoTypeText.textContent = textArray[textIndex].substring(
+              0,
+              charIndex - 1
+            );
+            charIndex--;
+            setTimeout(type, erasingSpeed);
+          } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+              textIndex = (textIndex + 1) % textArray.length;
+            }
+            setTimeout(type, delayBetweenWords);
+          }
+        }
+
+        type();
+      });
+    </script>
 
     <script src="./js/app.js"></script>
   </body>
