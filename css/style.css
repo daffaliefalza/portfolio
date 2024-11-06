@@ -556,6 +556,10 @@ footer {
     margin-top: -5rem;
   }
 
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
   .projects p {
     padding-inline: 1rem !important;
   }
