@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Liefalza</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Liefalza" />
+    <meta
+      name="description"
+      content="This is Andi Daffa Liefalza - Portfolio"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+
+    <!-- google font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .animated-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #3498db;
+        border-radius: 5px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        animation: pulse 2s infinite;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        left: 45%;
+      }
+
+      .animated-button:hover {
+        background-color: #2980b9;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+          transform: scale(1.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="top" class="animate__animated animate__fadeInDown">
+      <div class="container">
+        <h3 class="logo">Liefalza</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero  -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__title">
+          <h1 class="animate__animated animate__fadeInDown">
+            Front-end Developer
+          </h1>
+        </div>
+        <p class="hero__description animate__animated animate__fadeInDown">
+          Hi, I’m Andi Daffa Liefalza. A passionate Front-<br />end Developer
+          based in bekasi, Indonesia.
+        </p>
+        <div class="hero__social-media animate__animated animate__fadeInDown">
+          <a
+            href="https://www.linkedin.com/in/andidaffaliefalza/"
+            target="_blank"
+          >
+            <img src="./assets/images/linkedin.png" alt="linkedin" />
+          </a>
+          <a href="https://github.com/daffaliefalza" target="_blank">
+            <img src="./assets/images/github.png" alt="github" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- about -->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__title">
+          <h2>About me</h2>
+        </div>
+        <div class="about__grid-container">
+          <div class="about__img-profile">
+            <div class="border-element"></div>
+            <img src="./assets/images/profile.jpg" alt="profile image" />
+          </div>
+          <div class="about__description">
+            <p>
+              I am freshgraduate information system student and a Junior Web
+              Developer certified. I like to develop a modern looking responsive
+              website. I also have the Foundation of UI-UX knowledge that will
+              provide viewing comfort and usability for the users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- skills -->
+
+    <section class="skills">
+      <div class="container">
+        <div class="skills__title">
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-list">
+          <div>
+            <img src="./assets/images/html.png" alt="html" />
+            <span>HTML</span>
+          </div>
+          <div>
+            <img src="./assets/images/css.png" alt="css" />
+            <span>CSS</span>
+          </div>
+
+          <div>
+            <img src="./assets/images/js.png" alt="js" />
+            <span>JS</span>
+          </div>
+          <div>
+            <img src="./assets/images/react.png" alt="react" />
+            <span>REACT JS</span>
+          </div>
+          <div>
+            <img src="./assets/images/tailwind.png" alt="tailwind" />
+            <span>Tailwind CSS</span>
+          </div>
+          <div>
+            <img src="./assets/images/sc.png" alt="sc" />
+            <span>Styled Components</span>
+          </div>
+          <div>
+            <img src="./assets/images/git.png" alt="git" />
+
+            <span>Git</span>
+          </div>
+          <div>
+            <img src="./assets/images/typescript.png" alt="typescript" />
+            <span>Typescript</span>
+          </div>
+          <div>
+            <img src="./assets/images/php.png" alt="php" />
+            <span>PHP</span>
+          </div>
+          <div>
+            <img src="./assets/images/mysql.png" alt="mysql" />
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills end -->
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+      <div class="projects__title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-wrapper container">
+        <div class="project grid-container">
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/furnishop.png"
+              alt="furnishop"
+              width="940"
+              height="360"
+              style="height: 350px"
+            />
+          </div>
+          <div class="projects-description">
+            <h3>Furnishop</h3>
+            <p>
+              Furnishop is an e-commerce furniture website. Created with
+              ReactJS, context-api, and Tailwind CSS
+            </p>
+            <div class="projects-technology">
+              <h4>React</h4>
+              <h4>Tailwind CSS</h4>
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://github.com/daffaliefalza/furni-shop"
+                target="_blank"
+                >Code <img src="./assets/images/github.png" alt="github link"
+              /></a>
+              <a
+                href="https://furnishop-daffaliefalza.netlify.app/"
+                target="_blank"
+                >Live Demo <img src="./assets/images/arrow.png" alt="live demo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project grid-container"
+          style="grid-template-columns: 2.5fr 1fr"
+        >
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/digihouse.png"
+              alt="digihouse"
+              width="940"
+              height="360"
+              style="height: 360px; width: 100%"
+            />
+          </div>
+          <div class="projects-description">
+            <h3>DigiHouse</h3>
+            <p>
+              Digihouse is a web application that can manage a warehouse and
+              display a warehouse all across Indonesia.
+            </p>
+            <div class="projects-technology">
+              <h4>React</h4>
+              <h4>Tailwind CSS</h4>
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://www.canva.com/design/DAF3PRK_uhY/5LJ_mqFyD-Jk-GnRPJ-l2Q/edit?utm_content=DAF3PRK_uhY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank"
+                >See detail <img src="./assets/images/arrow.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project grid-container"
+          style="grid-template-columns: 2.5fr 1fr"
+        >
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/griya.png"
+              alt="griya"
+              width="940"
+              height="360"
+              style="height: 360px; width: 100%"
+            />
+          </div>
+          <div class="projects-description">
+            <h3>Griya Jamoe Klasik</h3>
+            <p>
+              Griya Jamoe Klasik is an e-commerce website that sells traditional
+              herbal drink. The project has 2 roles, Customer and Admins.
+            </p>
+            <div class="projects-technology">
+              <h4>HTML</h4>
+              <h4>PHP</h4>
+              <h4>MySQL</h4>
+              <h4>API</h4>
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://drive.google.com/file/d/1ELNYdWM85tAv77fyVvU8uR8BhQaENx53/view?usp=sharing"
+                target="_blank"
+                >See detail <img src="./assets/images/arrow.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="project grid-container">
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/dprod.png"
+              alt="dprod"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="projects-description">
+            <h3>Dprod</h3>
+            <p>
+              Dprod is a digital product agency website. Created in react js &
+              tailwind css.
+            </p>
+            <div class="projects-technology">
+              <h4>React</h4>
+              <h4>TailwindCSS</h4>
+            </div>
+            <div class="projects-links">
+              <a href="https://github.com/daffaliefalza/dprod" target="_blank"
+                >Code <img src="./assets/images/github.png" alt="github link"
+              /></a>
+              <a href="https://dprodagency-dev.netlify.app/" target="_blank"
+                >Live Demo <img src="./assets/images/arrow.png" alt="live demo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="project grid-container-two-cols">
+          <div class="card-project">
+            <h3>A</h3>
+          </div>
+          <div class="card-project">
+            <h3>B</h3>
+          </div>
+        </div> -->
+        <div class="project grid-container">
+          <div class="projects-description">
+            <h3>TravelKuy</h3>
+            <p>
+              A landing page of a travel website, user can see a list of top
+              destination places in Indonesia.
+            </p>
+            <div class="projects-technology">
+              <h4>React</h4>
+              <h4>Vanilla CSS</h4>
+            </div>
+
+            <div class="projects-links">
+              <a
+                href="https://github.com/daffaliefalza/travelkuy"
+                target="_blank"
+                >Code <img src="./assets/images/github.png" alt="github link"
+              /></a>
+              <a href=" https://travelkuy-dev.netlify.app/" target="_blank"
+                >Live Demo <img src="./assets/images/arrow.png" alt="live demo"
+              /></a>
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/travelkuy.png"
+              alt="travel kuy"
+              width="640"
+              height="360"
+            />
+          </div>
+        </div>
+
+        <!-- <div class="project grid-container-two-cols">
+          <div class="card-project">
+            <h3>A</h3>
+          </div>
+          <div class="card-project">
+            <h3>B</h3>
+          </div>
+        </div> -->
+
+        <div class="project grid-container">
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/huddle.png"
+              alt="Huddle"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="projects-description">
+            <h3>Huddle</h3>
+            <p>
+              Huddle is a landing page challenged by frontend-mentor. Created in
+              React js & styled-components
+            </p>
+            <div class="projects-technology">
+              <h4>React</h4>
+              <h4>Styled Components</h4>
+            </div>
+            <div class="projects-links">
+              <a href="https://github.com/daffaliefalza/huddle" target="_blank"
+                >Code <img src="./assets/images/github.png" alt="github link"
+              /></a>
+              <a href="https://huddle-react-dev.netlify.app/" target="_blank"
+                >Live Demo <img src="./assets/images/arrow.png" alt="live demo"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project grid-container-two-cols">
+          <div class="card-project">
+            <h3>A</h3>
+          </div>
+          <div class="card-project">
+            <h3>B</h3>
+          </div>
+        </div> -->
+        <div class="project grid-container">
+          <div class="projects-description">
+            <h3>W - News Homepage</h3>
+            <p>
+              A Challenge from frontendmentor, the content itself contains
+              modern layouting technique such as flexbox & grid.
+            </p>
+            <div class="projects-technology">
+              <h4>HTML</h4>
+              <h4>Vanilla CSS</h4>
+              <h4>JavaScript</h4>
+            </div>
+            <div class="projects-links">
+              <a
+                href="https://github.com/daffaliefalza/news-homepage"
+                target="_blank"
+                >Code <img src="./assets/images/github.png" alt="github link"
+              /></a>
+              <a
+                href="https://daffaliefalza.github.io/news-homepage/"
+                target="_blank"
+                >Live Demo <img src="./assets/images/arrow.png" alt="live demo"
+              /></a>
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <img
+              src="./assets/images/w.png"
+              alt="news homepage"
+              width="640"
+              height="360"
+            />
+          </div>
+        </div>
+        <a
+          href="https://daffa-repo-projects.netlify.app/"
+          target="_blank"
+          class="animated-button"
+          >All Projects</a
+        >
+      </div>
+    </section>
+
+    <!-- projects end -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+      <div class="contact__title">
+        <h2>Reach me</h2>
+      </div>
+      <div class="contact__wrapper">
+        <div class="gmail">
+          <img src="./assets/images/gmail.png" alt="gmail" />
+          <div class="gmail-info">
+            <h4>Gmail</h4>
+            <a
+              href="mailto:liefalzaa@gmail.com"
+              style="text-decoration: underline; color: #000"
+              >liefalzaa@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="location">
+          <img src="./assets/images/location.png" alt="location" />
+          <div class="location-info">
+            <h4>Location</h4>
+            <span>Bekasi, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact end -->
+    <!-- footer -->
+    <footer>
+      copyright &copy; <em>andi daffa liefalza</em> <br />Made with
+      <span style="color: rgb(244, 70, 12)">&hearts; in bekasi</span>
+    </footer>
+    <!-- footer end -->
+
+    <!-- back to top -->
+
+    <a href="#">
+      <img src="./assets/images/top.png" class="top" alt="" />
+    </a>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
