@@ -508,7 +508,11 @@ footer {
   }
 
   .hero__title {
-    margin-top: 10rem;
+    margin-top: 13rem;
+  }
+
+  .about__title {
+    margin-top: 10rem !important;
   }
 
   .hero__social-media {
