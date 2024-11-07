@@ -112,6 +112,12 @@ header nav ul li a:hover {
   background-color: #fff;
 }
 
+@media (min-width: 968px) {
+  .hero__wrapper {
+    margin-bottom: 10rem !important;
+  }
+}
+
 .hero__wrapper {
   display: flex;
   /* flex-direction: column; */
@@ -120,6 +126,12 @@ header nav ul li a:hover {
   /* flex-wrap: wrap; */
   color: #000;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 1000px) {
+  .hero__image-wrapper {
+    margin-right: 30px;
+  }
 }
 
 .hero__title h1 {
@@ -262,6 +274,10 @@ header nav ul li a:hover {
 }
 
 /* end of skills styles */
+
+.projects {
+  padding-top: 0rem !important;
+}
 
 /* projects styles */
 .projects__title {
