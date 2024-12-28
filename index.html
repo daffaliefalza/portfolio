@@ -38,6 +38,25 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <style>
+      ul li:last-child a {
+        background-color: transparent;
+        color: #1e90ff;
+        font-weight: 600;
+        padding: 5px 15px;
+        border: 1px solid #1e90ff;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      ul li:last-child a:hover {
+        background-color: #1e90ff;
+        color: #fff;
+        border-color: #1e90ff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(30, 144, 255, 0.3);
+      }
+
       .hero__title {
         font-size: 3rem;
         font-weight: bold;
@@ -160,6 +179,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="">Blog</a></li>
           </ul>
         </nav>
       </div>
@@ -194,10 +214,21 @@
               <a href="https://github.com/daffaliefalza" target="_blank">
                 <img src="./assets/images/github.png" alt="GitHub" />
               </a>
+              <a href="https://www.youtube.com/@CodeWithDaffa" target="_blank">
+                <img
+                  src="./assets/images/youtube.png"
+                  alt="Youtube"
+                  style="width: 40px"
+                />
+              </a>
             </div>
           </div>
           <div class="hero__image-wrapper animate__animated animate__fadeInUp">
-            <img src="assets/images/bruh2.jpg" alt="" style="height: 450px" />
+            <img
+              src="assets/images/cool-profile.jpg"
+              alt=""
+              style="height: 480px"
+            />
           </div>
         </div>
       </div>
