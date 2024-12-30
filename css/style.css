@@ -87,6 +87,7 @@ header .logo {
 
 header nav ul {
   display: flex;
+  align-items: center;
 }
 
 header nav ul li a {
@@ -518,6 +519,10 @@ footer {
     width: 100%;
   }
 
+  header nav ul li a {
+    margin-right: 15px !important;
+  }
+
   .logo {
     text-align: center;
     margin-bottom: 1rem;
@@ -596,5 +601,29 @@ footer {
   .contact__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+  header nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about__title {
+    margin-top: 15rem !important;
+  }
+
+  header nav .blog {
+    display: inline-block;
+    margin-top: 10px !important;
+  }
+
+  .hero {
+    margin-top: 0rem !important;
+  }
+
+  .hero__wrapper {
+    margin-top: 4rem !important;
   }
 }
