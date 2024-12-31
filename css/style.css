@@ -185,6 +185,8 @@ header nav ul li a:hover {
 
 /* end of hero styles */
 
+/* about styles */
+
 .about__grid-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -192,14 +194,24 @@ header nav ul li a:hover {
 }
 
 .about__title {
-  margin-bottom: 5rem;
-}
-
-/* about styles */
-.about__title h2 {
+  background: linear-gradient(#1a3c72, #1c5d99);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 2rem;
-  text-align: center;
+  position: relative;
+}
+
+.about__title::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  bottom: -3px;
+  left: 0;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
 }
 
 .about__img-profile {
@@ -225,11 +237,25 @@ header nav ul li a:hover {
 }
 
 .about__description {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   font-weight: 300;
   text-align: justify;
-  margin-top: 1rem;
 }
+
+/* .cv-button {
+  background: linear-gradient(90deg, #1a3c72, #1c5d99);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+} */
 
 /* end of about styles */
 
@@ -243,6 +269,13 @@ header nav ul li a:hover {
 
 .skills__title {
   margin: 4rem 0;
+}
+
+.skills__title h2 {
+  background: linear-gradient(#1a3c72, #1c5d99);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills__title h2 {
@@ -289,6 +322,10 @@ header nav ul li a:hover {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  background: linear-gradient(#1a3c72, #1c5d99);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .projects .grid-container {
@@ -393,6 +430,10 @@ header nav ul li a:hover {
 
 .contact__title h2 {
   font-weight: bold;
+  background: linear-gradient(#1a3c72, #1c5d99);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2rem;
   text-align: center;
 }
@@ -537,7 +578,7 @@ footer {
     margin-top: 13rem;
   }
 
-  .about__title {
+  .about__grid-container {
     margin-top: 10rem !important;
   }
 
