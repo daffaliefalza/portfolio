@@ -384,6 +384,8 @@ header nav ul li a:hover {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 1rem 0;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .projects-technology {

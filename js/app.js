@@ -28,17 +28,17 @@ ScrollReveal().reveal(".skills-list", {
   distance: "80px",
 });
 
-ScrollReveal().reveal(".projects__title", {
-  delay: 700,
-  origin: "top",
-  distance: "80px",
-});
+// ScrollReveal().reveal(".projects__title", {
+//   delay: 700,
+//   origin: "top",
+//   distance: "80px",
+// });
 
-ScrollReveal().reveal(".projects .grid-container", {
-  delay: 700,
-  origin: "bottom",
-  distance: "80px",
-});
+// ScrollReveal().reveal(".projects .grid-container", {
+//   delay: 700,
+//   origin: "bottom",
+//   distance: "80px",
+// });
 
 const btnToggleTop = document.querySelector(".top");
 
