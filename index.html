@@ -674,6 +674,209 @@
       });
     </script>
 
+    <style>
+      .activities {
+        background-color: #f9f9f9;
+        padding: 50px 20px;
+      }
+
+      .activities__title {
+        margin: 4rem 0;
+      }
+
+      .activities__title h2 {
+        background: linear-gradient(#1a3c72, #1c5d99);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .activities__title h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .activity {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 30px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .activity:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .activity h3 {
+        font-size: 24px;
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      .activity img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+
+      .arrowgif {
+        width: 88px;
+        bottom: 25%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+
+      .image-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+        justify-content: center;
+      }
+
+      .image-wrapper img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        object-fit: cover;
+        max-height: 400px;
+      }
+
+      .image-wrapper img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .decorated-text {
+        position: relative;
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      .decorated-text::before {
+        content: "|";
+        position: absolute;
+        left: 0;
+        color: #555;
+        font-weight: bold;
+        font-size: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      @media (max-width: 950px) {
+        .arrowgif {
+          width: 88px;
+          bottom: 25%;
+          left: 42%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .arrowgif {
+          width: 88px;
+          bottom: 20%;
+          left: 45%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+
+        .image-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .activity {
+          text-align: left;
+          padding: 15px;
+        }
+
+        .skills__title h2 {
+          font-size: 28px;
+        }
+
+        .activity h3 {
+          font-size: 20px;
+        }
+
+        .activity p {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 550px) {
+        .arrowgif {
+          width: 88px;
+          bottom: 12%;
+          left: 47%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .arrowgif {
+          width: 58px;
+          bottom: 12%;
+          left: 43%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+      }
+    </style>
+
+    <!-- activities -->
+
+    <section class="activities" id="activities">
+      <div class="container">
+        <div class="activities__title">
+          <h2>Activities</h2>
+        </div>
+
+        <div class="activity">
+          <h3>Computer Club - Bina Insani University</h3>
+          <p class="decorated-text">
+            I share about technology especially in frontend development such as
+            HTML, CSS, JavaScript
+          </p>
+          <img src="assets/images/computerclub.jpg" />
+          <img src="assets/images/arrowgif.gif" alt="" class="arrowgif" />
+        </div>
+        <div class="activity">
+          <h3>Rumah BUMN Bekasi</h3>
+          <p class="decorated-text">
+            Weekly meetings to discuss plans and ideas for supporting local
+            businesses (UMKM).
+          </p>
+          <div class="image-wrapper">
+            <img src="assets/images/a1.jpg" alt="Rumah BUMN Activity 1" />
+            <img
+              src="assets/images/activity2.jpg"
+              alt="Rumah BUMN Activity 2"
+            />
+            <img
+              src="assets/images/activity3.jpg"
+              alt="Rumah BUMN Activity 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- activities end -->
+
     <!-- contact -->
 
     <section class="contact" id="contact">
