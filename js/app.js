@@ -49,3 +49,33 @@ window.addEventListener("scroll", () => {
     btnToggleTop.classList.remove("active");
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("exitPopup");
+  const closePopup = document.getElementById("closePopup");
+
+  const calculateTriggerZoneWidth = () => {
+    const isMobile = window.innerWidth <= 768;
+    return isMobile ? 150 : 500;
+  };
+
+  const showPopup = (e) => {
+    const windowWidth = window.innerWidth;
+    const triggerZoneWidth = calculateTriggerZoneWidth();
+
+    if (e.clientY < 10 && e.clientX > windowWidth - triggerZoneWidth) {
+      popup.classList.remove("hidden");
+      document.removeEventListener("mouseleave", showPopup);
+    }
+  };
+
+  closePopup.addEventListener("click", () => {
+    popup.classList.add("hidden");
+  });
+
+  document.addEventListener("mouseleave", showPopup);
+
+  window.addEventListener("resize", () => {
+    calculateTriggerZoneWidth();
+  });
+});
