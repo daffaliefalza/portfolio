@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const textArray = ["Front-end Developer.", "Web Designer."];
+  const textArray = ["Frontend Developer.", "Geeks."];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
