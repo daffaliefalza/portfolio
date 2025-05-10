@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const textArray = ["Frontend Developer.", "Geeks."];
+  const textArray = ["Web Developer.", "A Learner.", "Geeks."];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  const typingSpeed = 100;
-  const erasingSpeed = 50;
+  // const typingSpeed = 100;
+  // const erasingSpeed = 50;
+  // const delayBetweenWords = 800;
+
+  const typingSpeed = 80;
+  const erasingSpeed = 25;
   const delayBetweenWords = 800;
 
   const autoTypeText = document.getElementById("auto-type-text");
