@@ -236,11 +236,11 @@
       <div class="popup-content">
         <h3>Wait! Before You Leave...</h3>
         <p>
-          Hey there recruiters 👋 Before you leave, I’d love to ask you to
-          please consider me as one of your candidates. I’m a Developer you can
-          trust & passionate about creating exceptional user experiences, eager
-          to learn, and deeply committed to delivering high-quality work with a
-          strong sense of responsibility.
+          Hey there, recruiters and potential clients! 👋 Before you go, I’d
+          love for you to consider me as a candidate or project partner. I’m
+          someone you can trust—passionate about creating exceptional user
+          experiences, eager to learn, and fully committed to delivering
+          high-quality work with a strong sense of responsibility.
         </p>
         <button id="closePopup">Hmm... Okay</button>
       </div>
@@ -1007,126 +1007,344 @@ The Bandung Selatan Infrastructure  is a collaborative platform dedicated to the
       </div>
     </section> -->
 
+    <section class="certification-section">
+      <div class="container">
+        <header class="section-header">
+          <h3 class="section-title">Junior Web Developer Certification BNSP</h3>
+          <p class="section-subtitle">
+            A Live Session during BNSP (Badan Nasional Sertifikasi Profesi)
+            Certification.
+          </p>
+          <p class="supervisor-info">
+            Supervised by
+            <a
+              href="https://scholar.google.co.id/citations?user=dj0pDxgAAAAJ&hl=en"
+              target="_blank"
+              class="supervisor-link"
+              >Ms. Uning Lestari ST., M.KOM., Ph.D.(Cand.)</a
+            >
+          </p>
+        </header>
+
+        <div class="certification-content">
+          <div class="documentation-image">
+            <img
+              src="assets/images/dokumentasi-bnsp.jpeg"
+              alt="BNSP Certification Documentation"
+              class="doc-image"
+            />
+          </div>
+
+          <article class="project-card">
+            <h3 class="project-title">Bookstore Project | BacaIn</h3>
+
+            <div class="project-highlights">
+              <h4 class="highlights-title">Project Highlights</h4>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-1.png"
+                    alt="Project screenshot 1"
+                    class="gallery-image"
+                  />
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-2.png"
+                    alt="Project screenshot 2"
+                    class="gallery-image"
+                  />
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-3.png"
+                    alt="Project screenshot 3"
+                    class="gallery-image"
+                  />
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-4.png"
+                    alt="Project screenshot 4"
+                    class="gallery-image"
+                  />
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-5.png"
+                    alt="Project screenshot 5"
+                    class="gallery-image"
+                  />
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="assets/images/certification-6.png"
+                    alt="Project screenshot 6"
+                    class="gallery-image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="project-features">
+              <div class="feature-column">
+                <h4 class="feature-title">Admin Features</h4>
+                <ul class="feature-list">
+                  <li>CRUD operations for Book Products</li>
+                  <li>Admin Login/Register</li>
+                  <li>View registered users</li>
+                  <li>View order data</li>
+                  <li>Update payment status</li>
+                  <li>Download payment receipts</li>
+                </ul>
+                <p class="admin-note">
+                  <em
+                    >* To access admin page, add /admin to the URL and do login
+                    / registration.
+                  </em>
+                </p>
+              </div>
+
+              <div class="feature-column">
+                <h4 class="feature-title">Customer Features</h4>
+                <ul class="feature-list">
+                  <li>User registration/login</li>
+                  <li>About us details</li>
+                  <li>Contact admin/system</li>
+                  <li>Book search by category/title</li>
+                  <li>Add to cart and payment</li>
+                  <li>Order history</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a
+                href="https://bacain.webwirausahamuda.com"
+                class="demo-button"
+                target="_blank"
+                >View Live Demo ↗</a
+              >
+              <p class="tech-stack">
+                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL,
+                etc...
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <style>
+      /* Base Styles */
       .certification-section {
-        background-color: #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        margin: 2rem;
-        border-radius: 10px;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        color: #333;
+        line-height: 1.6;
+        padding: 4rem 0;
+        background-color: #f9f9f9;
       }
 
+      .certification-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      /* Section Header */
       .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+
+      .section-subtitle {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+        margin-bottom: 0.5rem;
+      }
+
+      .supervisor-info {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .supervisor-link {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .supervisor-link:hover {
+        color: #2980b9;
+        text-decoration: underline;
+      }
+
+      /* Certification Content */
+      .certification-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .documentation-image {
         text-align: center;
         margin-bottom: 2rem;
       }
 
-      .section-header h2 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: #0055aa;
-      }
-
-      .section-header p {
-        margin: 0.5rem 0;
-      }
-
       .doc-image {
-        margin-top: 1rem;
-        width: 100%;
-        text-align: center;
-        margin-inline: auto;
+        max-width: 100%;
+        height: auto;
         border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
+      /* Project Card */
       .project-card {
-        background-color: #f0f8ff;
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin-top: 2rem;
+        background: white;
+        border-radius: 10px;
+        padding: 2.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
       }
 
-      .project-card h3 {
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        color: #007acc;
+      .project-title {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
       }
 
-      .project-image {
+      /* Project Highlights */
+      .project-highlights {
+        margin-bottom: 3rem;
+      }
+
+      .highlights-title {
+        font-size: 1.3rem;
+        color: #34495e;
+        margin-bottom: 1.5rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .gallery-image {
         width: 100%;
         height: auto;
-        border-radius: 6px;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      .gallery-item:hover .gallery-image {
+        transform: scale(1.03);
+      }
+
+      /* Project Features */
+      .project-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .project-features {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .feature-column {
+        background: #f8fafc;
+        padding: 1.5rem;
+        border-radius: 8px;
+      }
+
+      .feature-title {
+        font-size: 1.2rem;
+        color: #2c3e50;
         margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e0e6ed;
+      }
+
+      .feature-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .feature-list li {
+        padding: 0.5rem 0;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .feature-list li:before {
+        content: "•";
+        color: #3498db;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+
+      .admin-note {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        margin-top: 1rem;
+        font-style: italic;
+      }
+
+      /* Project Footer */
+      .project-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
       }
 
       .demo-button {
         display: inline-block;
-        margin: 1rem 0;
-        padding: 0.6rem 1.2rem;
-        background-color: #007acc;
+        padding: 0.8rem 1.8rem;
+        background-color: #3498db;
         color: white;
         text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.3s, transform 0.2s;
       }
 
       .demo-button:hover {
-        background-color: #005f99;
+        background-color: #2980b9;
+        transform: translateY(-2px);
       }
 
       .tech-stack {
-        font-style: italic;
-        color: #444;
+        font-size: 0.95rem;
+        color: #555;
       }
     </style>
-
-    <!-- <section class="certification-section">
-      <div class="container">
-        <header class="section-header">
-          <h3>Junior Web Developer Certification BNSP</h3>
-          <p>
-            A Live Session during BNSP (Badan Nasional Sertifikasi Profesi)
-            Certification.
-          </p>
-          <p>
-            I was supervised by
-            <strong
-              ><a
-                href="https://scholar.google.co.id/citations?user=dj0pDxgAAAAJ&hl=en"
-                target="_blank"
-                style="color: black !important; text-decoration: underline"
-                >Ms. Uning Lestari ST., M.KOM., Ph.D.(Cand.)</a
-              ></strong
-            >
-            herself.
-          </p>
-        </header>
-
-        <div>
-          <img
-            src="assets/images/dokumentasi-bnsp.jpeg"
-            alt="Dokumentasi BNSP"
-            class="doc-image"
-          />
-          <article class="project-card">
-            <h3>BNSP Certification Project</h3>
-            <h3>Product Inventory Management</h3>
-            <img
-              src="https://placehold.co/600x400"
-              alt="Product Inventory Screenshot"
-              class="project-image"
-            />
-            <p>
-              A simple web-based inventory system to manage product stock,
-              transactions, and reports.
-            </p>
-            <a href="#" class="demo-button" target="_blank">🔗 Live Demo</a>
-            <p class="tech-stack">
-              <strong>Tech Stack:</strong> MongoDB, Express, React, NodeJS
-            </p>
-          </article>
-        </div>
-      </div>
-    </section> -->
 
     <!-- activities -->
 
